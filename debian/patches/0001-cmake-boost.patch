@@ -1,0 +1,18 @@
+commit e1859481e46987a0a53d7131a91c4a7c9699a23f
+Author: Daniel Pocock <daniel@pocock.pro>
+Date:   Mon Nov 22 15:16:55 2021 +0100
+
+    CMakeLists.txt: explicitly list the Boost libraries required for linking
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index f554f5c..4fe7525 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -60,6 +60,7 @@ set(OPENCV_REQUIRED <4.0.0)
+ set(LIBSOUP_REQUIRED ^2.40)
+ 
+ include(GenericFind)
++generic_find(LIBNAME Boost REQUIRED COMPONENTS unit_test_framework system filesystem thread)
+ generic_find(LIBNAME gstreamer-1.0 VERSION ${GST_REQUIRED} REQUIRED)
+ generic_find(LIBNAME gstreamer-base-1.0 VERSION ${GST_REQUIRED} REQUIRED)
+ generic_find(LIBNAME gstreamer-video-1.0 VERSION ${GST_REQUIRED} REQUIRED)
