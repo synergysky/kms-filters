@@ -1,3 +1,9 @@
+kms-filters (7.0.0-1~debify11+2) debify-bullseye; urgency=medium
+
+  * Build for debify-bullseye
+
+ -- Daniel Pocock <daniel@pocock.pro>  Tue, 23 Nov 2021 16:16:54 +0100
+
 kms-filters (7.0.0-1~debify11+1) debify-bullseye; urgency=medium
 
   * Build for debify-bullseye
