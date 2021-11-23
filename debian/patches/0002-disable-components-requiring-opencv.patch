@@ -244,3 +244,21 @@ index fc20e11..0000000
 -    }
 -  ]
 -}
+diff --git a/src/server/CMakeLists.txt b/src/server/CMakeLists.txt
+index 21dc2d0..9f9d2b4 100644
+--- a/src/server/CMakeLists.txt
++++ b/src/server/CMakeLists.txt
+@@ -8,9 +8,9 @@ include(CodeGenerator)
+ generate_code(
+   MODELS ${CMAKE_CURRENT_SOURCE_DIR}/interface
+   SERVER_IMPL_LIB_EXTRA_HEADERS ${KMS_FILTERS_IMPL_HEADERS}
+-  SERVER_IMPL_LIB_EXTRA_INCLUDE_DIRS ${opencv_INCLUDE_DIRS}
+-  SERVER_IMPL_LIB_EXTRA_LIBRARIES ${opencv_LIBRARIES}
++  #SERVER_IMPL_LIB_EXTRA_INCLUDE_DIRS ${opencv_INCLUDE_DIRS}
++  #SERVER_IMPL_LIB_EXTRA_LIBRARIES ${opencv_LIBRARIES}
+   SERVER_STUB_DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/implementation/objects
+-  SERVER_IMPL_LIB_PKGCONFIG_EXTRA_REQUIRES "opencv"
+-  SERVER_IMPL_LIB_FIND_CMAKE_EXTRA_LIBRARIES "opencv"
++  #SERVER_IMPL_LIB_PKGCONFIG_EXTRA_REQUIRES "opencv"
++  #SERVER_IMPL_LIB_FIND_CMAKE_EXTRA_LIBRARIES "opencv"
+ )
