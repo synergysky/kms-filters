@@ -16,10 +16,8 @@ Build-Depends: debhelper (>= 9),
  libglibmm-2.4-dev,
  libgstreamer1.0-dev,
  libgstreamer-plugins-base1.0-dev,
- libopencv-dev,
  libsigc++-2.0-dev,
- libsoup2.4-dev,
- opencv-data
+ libsoup2.4-dev
 Standards-Version: 4.0.0
 Vcs-Git: https://github.com/Kurento/kms-filters.git
 Vcs-Browser: https://github.com/Kurento/kms-filters
@@ -29,8 +27,7 @@ Package: kms-filters
 Architecture: any
 Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends},
- kms-elements (>= 7.0.0),
- opencv-data
+ kms-elements (>= 7.0.0)
 Description: Kurento Filters module
  Kurento Filters module - Binary libraries.
 
@@ -47,7 +44,6 @@ Depends: kms-filters (= ${binary:Version}),
  libglibmm-2.4-dev,
  libgstreamer1.0-dev,
  libgstreamer-plugins-base1.0-dev,
- libopencv-dev,
  libsigc++-2.0-dev,
  libsoup2.4-dev
 Description: Kurento Filters module
